@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>contact us</title>
+<style>
+
+   #mynavigation{
+   text-align: center; padding: 10px;
+   background-color: black; /*black color*/
+   color: #fce3b6;
+    }
+<!-- the highlighted parts  -->
+
+      nav {
+        position: fixed;
+        top: 50;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background-color: #333;
+        z-index: 999;
+      }
+
+      .menu-icon {
+        color: #fff;
+        font-size: 24px;
+        line-height: 5px;
+        margin-left: 20px;
+        cursor: pointer;
+      }
+
+      .menu {
+        top: 60px;
+        left: -100%;
+        width: 100%;
+        height: calc(100% - 60px);
+        background-color: #111;
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        transition: left 0.3s ease;
+      }
+
+      .menu li {
+        display: block;
+        margin: 40px 0;
+        font-size: 20px;
+      }
+
+      .menu a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+      }
+
+      .menu-items {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60px;
+        background-color: #333;
+        list-style: none;
+        text-align: center;
+        padding: 0;
+      }
+
+      .menu-items li {
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 20px;
+      }
+
+      .menu-items a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+      }
+
+      #menu-toggle:checked ~ .menu {
+        left: 0;
+      }
+
+      #menu-toggle:checked ~ .menu-items {
+        display: block;
+      }
+
+      .close-menu {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      nav {
+    float: center;
+    }
+   
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    }
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+
+    position: relative;
+    }
+
+nav a{
+    color: #fce3b6;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    }
+
+nav a:hover {
+    color: #472af8;
+    }
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #472af8;
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+    }
+
+nav a:hover::before{
+    width: 100%;
+    }
+
+
+<!-- my mainbody -->
+
+   #mymainbody{
+   text-align: center; padding: 15px;
+   background-color: black;
+   color: #bababa;
+    }
+
+  #contactus{
+    background-color: black;
+    padding: 15px;
+    height: 15vh;
+    padding-bottom: 100px;
+  }
+
+<!-- the footer -->
+
+.dcard1{
+    background-color: black;
+    display: flex;
+    width: 1700px; max-width: 1850px;
+    height: 450px;
+    border: 5px solid #fce3b6;
+    text-align: center;
+    overflow: auto;
+   
+    }
+
+   #mymap{
+   text-align:center;
+   background-color: black;
+   color: #bababa;
+   padding-left: 30px;
+   padding-top:10px;padding-bottom: 20px;
+    }
+   
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial,helvetica,sans-serif;
+}
+
+
+footer {
+
+width:100%;
+height:15vh ;
+text-align: center; padding: 4px;
+background-color:black;
+color: white;
+display:flex;
+justify-content: center;
+margin: 0 auto;
+  }
+
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-heading h2{
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.footer-heading a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer-container{
+background-color: black;
+padding-bottom: 4rem;
+display: flex;
+
+
+}
+
+.footer-heading a:hover {
+    color: #472af8;
+    transition: 0.3s ease-out;
+
+}
+
+.footer-email-form h2 {
+    margin-bottom:2rem ;
+    color: white;
+    text-align: center;
+}
+
+#footer-email{
+    width: 125px;
+    height: 20px;
+    border-radius: 4px;
+    outline: none;
+    outline: none;
+    border: none;
+    padding-left:0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+#footer-email::placeholder {
+    color: #bababa;
+
+}
+
+#footer-email-btn {
+    width: 50px;
+    height: 20px;
+    border-radius: 4px;
+    background-color:#bababa;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+
+
+}
+
+#footer-email-btn:hover{
+    cursor:pointer ;
+    background-color:#fce3b6;
+    transition: all 0.4s ease out;
+}
+
+@media screen and (max-width 575) {
+    .footer {
+        height: 25vh;
+    }
+
+    .footer-email-form{
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width 575) {
+    .footer {
+        padding-top: 2rem;
+    }
+
+}
+
+
+@media screen and (max-width 575) {
+    .footer-3 {
+        display: none;
+    }
+    .footer-email-form{
+        margin-top: 2rem;
+    }
+
+
+</style>
+
+<!-- my navigation highlights -->
+
+</head>
+<header>
+
+ <header>
+    <div id="mynavigation">
+    <nav>
+    <center>
+    <img src="NukeTech.png" alt="logo" width="200px" height="150px">
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="menu">
+      </ul>
+      <ul class="menu-items">
+        <li><a href="NukeTech.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="sellinglist.html">Selling List</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li class="close-menu">&#x2716;</li>
+      </ul>
+    </nav>
+<script>
+      var closeMenuBtn = document.querySelector('.close-menu');
+      var menuToggle = document.querySelector('#menu-toggle');
+      closeMenuBtn.addEventListener('click', function() {
+        menuToggle.checked = false;
+      });
+    </script>
+
+<hr>
+
+ 
+
+
+<hr>
+
+<footer>
+
+<div = class="footer-container">
+
+
+<div class="footer-heading footer 1">
+<h2>Location</h2>
+<a href="#">Address: Caudwell St, Bedford</a>
+<a href="#">Phone 01234568990</a>
+<a href="#">Email: Contact@nuketech.com</a>
+     
+      </div>
+
+<div class="footer-heading footer 2">
+<h2>About us</h2>
+<a href="#">Terms of Service</a>
+<a href="#">custom build's </a>
+<a href="#">our builds </a>
+<a href="#">loaction</a>
+<a href="#">call us</a>
+     
+      </div>
+
+<div class="footer-heading footer 3">
+<h2>Social Media</h2>
+<a href="#">Facebook</a>
+<a href="#">YouTube</a>
+<a href="#">Instagram</a>
+<a href="#">Twitter</a>
+   
+      </div>
+
+<div class="footer-email-form">
+<h2>Join our newsletter</h2>
+<input type="Email" placeholder="Enter your email address" id="footer-email">
+<input type="submit" value="Sign Up" id="footer-email-btn">
+
+      </div>
+      </div>
+
+
+</footer>
+
+
+
+
+<!-- backround colour  -->
+
+   <body bgcolor="#000000">
+
+
+</header>
+
+
+
+
+  
+  
+
+
+
